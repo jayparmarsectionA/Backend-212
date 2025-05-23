@@ -20,8 +20,17 @@ const server = http.createServer((req, res)=> {
         res.end(data);
     }
     else if (req.url === "/methods"){
-        if(req.method === "POST"){
+        if(req.method === "GET"){
+            res.end("GET method running");
+        }
+         else if(req.method === "POST"){
             res.end("Post method running");
+        }
+        else if(req.method === "PUT"){
+            res.end("PUT method running");
+        }
+        else if(req.method === "DELETE"){
+            res.end("DELETE method running");
         }
         
     }
