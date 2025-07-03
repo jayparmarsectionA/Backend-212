@@ -1,0 +1,81 @@
+/* Global background & fonts */
+body {
+  background-color: #f5f7fa; /* Light, calm background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container spacing */
+.container {
+  padding: 20px;
+}
+
+/* Headings */
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+h3 {
+  font-size: 20px;
+  color: #34495e;
+}
+
+.custom-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #035f64;
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex container for project details */
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Feature boxes in project details */
+.project-feature {
+  background-color: #035f64;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.project-feature:hover {
+  background-color: #dfe6e9;
+}
+
+/* Table styles (if used) */
+.table-no-border {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-no-border td,
+.table-no-border th {
+  border: none;
+  padding: 8px 15px;
+  text-align: left;
+}
+
+/* Carousel image styling */
+.carousel img {
+  border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-details {
+    flex-direction: column;
+  }
+}
