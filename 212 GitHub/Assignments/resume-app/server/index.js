@@ -3,6 +3,8 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const PORT = 8000;
+app.use(express.static('public'));
+
 
 app.use(cors());
 
@@ -15,18 +17,26 @@ const overview = {
 
 const education = [
   {
-    institution: "Seneca College",
+    institution: "Humber Polytechnic",
     degree: "Advanced Diploma in Computer Programming and Analysis",
-    year: "2023 - 2026"
-  },
-  {
-    institution: "Gujarat Technological University",
-    degree: "B.E. in Mechanical Engineering",
-    year: "2017 - 2021"
+    year: "2024 - 2026"
   }
 ];
 
 const projects = [
+  {
+    title: "News app",
+    highlight: "An interactive web-based news app using React.",
+    details: [
+      "a responsive news application using React.js and News API ",
+      "news, filtered among multiple categories",
+      "React Router for navigation and state management "
+    ],
+    images: [
+       "http://localhost:8000/img1.png",
+      "http://localhost:8000/img2.png"
+    ]
+  },
   {
     title: "Book Finder App",
     highlight: "A mobile app to search and track books.",
@@ -36,22 +46,9 @@ const projects = [
       "Mark books as To-Read, Reading, or Finished."
     ],
     images: [
-      "https://via.placeholder.com/600x300.png?text=Book+Finder+1",
-      "https://via.placeholder.com/600x300.png?text=Book+Finder+2",
-      "https://via.placeholder.com/600x300.png?text=Book+Finder+3"
-    ]
-  },
-  {
-    title: "Online Resume",
-    highlight: "An interactive web-based resume using React.",
-    details: [
-      "Built with React, Express, and Bootstrap.",
-      "Dynamic data fetching from backend.",
-      "Clean, responsive design with sections for skills, education, and projects."
-    ],
-    images: [
-      "https://via.placeholder.com/600x300.png?text=Resume+1",
-      "https://via.placeholder.com/600x300.png?text=Resume+2"
+      "http://localhost:8000/project1.1.png",
+      "http://localhost:8000/project1.2.png",
+      "http://localhost:8000/project1.3.png"
     ]
   }
 ];

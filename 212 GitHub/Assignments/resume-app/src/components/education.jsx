@@ -13,11 +13,11 @@ export default function Education() {
     <div className="mb-3">
       <h2 style={{ fontSize: '24px' }}>Education</h2>
       {data.map((edu, index) => (
-        <Card key={index} className="mb-2 p-3">
-          <Card.Body>
-            <Card.Title style={{ fontSize: '18px' }}>{edu.institution}</Card.Title>
-            <Card.Subtitle style={{ fontSize: '16px' }} className="mb-2 text-muted">{edu.degree}</Card.Subtitle>
-            <Card.Text style={{ fontSize: '16px' }}>{edu.year}</Card.Text>
+        <Card key={index} className="mb-2 custom-card">
+          <Card.Body className="custom-card">
+            <Card.Title style={{ fontSize: '18px', color: "white" }}>{edu.institution}</Card.Title>
+            <Card.Subtitle style={{ fontSize: '16px', color: "white"  }} className="mb-2">{edu.degree}</Card.Subtitle>
+            <Card.Text style={{ fontSize: '16px', color: "white"  }}>{edu.year}</Card.Text>
           </Card.Body>
         </Card>
       ))}

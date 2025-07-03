@@ -1,6 +1,6 @@
 /* Global background & fonts */
 body {
-  background-color: #f5f7fa; /* Light, calm background */
+  background-color: #4da8b6;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
@@ -10,6 +10,7 @@ body {
 /* Container spacing */
 .container {
   padding: 20px;
+  background-color: #54b8c8;
 }
 
 /* Headings */
@@ -27,6 +28,7 @@ h3 {
 .custom-card {
   transition: transform 0.3s, box-shadow 0.3s;
   background-color: #035f64;
+  color: white;
 }
 
 /* Hover effect for cards */
@@ -40,6 +42,10 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border-radius: 6px;
+  padding: 10px 15px;
+  background-color: #035f64;
+  height: 320px;
 }
 
 /* Feature boxes in project details */
@@ -54,6 +60,17 @@ h3 {
 .project-feature:hover {
   background-color: #dfe6e9;
 }
+
+.project-row {
+  display: flex;
+  align-items: stretch;
+}
+.project-card {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* Table styles (if used) */
 .table-no-border {
