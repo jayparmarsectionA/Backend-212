@@ -10,8 +10,9 @@ function App() {
 
   const fetchSingleFile = async()=>{
     try{
-    const response = await fetch(`http://localhost:8000/fetch/single`);
-    const data = await response.blob(); //extract file data
+    const response = await fetch(`http://localhost:9000/books/all`);
+    const data = await response.json(); //extract file data
+    console.log(data)
 
     const imageURL = URL.createObjectURL(data) // convert data to usable URL on front end
     //add more after a while -->  
@@ -23,6 +24,9 @@ function App() {
     console.log(error);
     }
   };
+
+
+
 
   const saveSingleFile = async(e)=>{
     e.presentDefault();
